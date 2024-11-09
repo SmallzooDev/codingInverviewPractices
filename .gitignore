@@ -1,0 +1,8 @@
+*.out
+*.exe
+*.o
+*.a
+*.so
+*.dylib
+
+problem_*

@@ -19,7 +19,6 @@ int main() {
     
     std::cout << "문제 '${problem_number}' 풀이 시작!" << std::endl;
 
-    return 0;
 }
 ' > "problems/$problem_dir/main.cpp"
 
@@ -27,6 +26,7 @@ echo "
 # 문제 $problem_dir
 $problem_dir: problems/$problem_dir/main.cpp
 	g++ -std=c++17 -Icommon problems/$problem_dir/main.cpp -o $problem_dir
+	./$problem_dir 
 " >> Makefile
 
 echo "문제 $problem_dir 디렉토리와 Makefile을 업데이트했습니다."
