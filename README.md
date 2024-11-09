@@ -3,6 +3,8 @@
 ## 00. init
 ```bash
 chmod +x init.sh
+chmod +x .git/hooks/pre-commit
+```
 ./init.sh <문제 번호>
 ```
 
