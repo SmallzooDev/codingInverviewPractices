@@ -12,6 +12,7 @@ problem_dir="problem_${problem_number}"
 mkdir -p "problems/$problem_dir"
 
 echo '#include "../../common/common_headers.h"
+using namespace std;
 
 int main() {
     // 여기에 문제 풀이 로직을 작성합니다.
