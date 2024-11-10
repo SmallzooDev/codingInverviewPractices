@@ -20,3 +20,9 @@ problem_1-C: problems/problem_1-C/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_1-C/main.cpp -o problem_1-C
 	./problem_1-C 
 
+
+# 문제 problem_1-D
+problem_1-D: problems/problem_1-D/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_1-D/main.cpp -o problem_1-D
+	./problem_1-D 
+
