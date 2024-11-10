@@ -11,7 +11,8 @@ problem_dir="problem_${problem_number}"
 
 mkdir -p "problems/$problem_dir"
 
-echo '// #include <bits/stdc++.h>
+echo '#include "../../common/common_headers.h"
+// #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
