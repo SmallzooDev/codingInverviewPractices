@@ -7,12 +7,13 @@ if [ -z "$problem_number" ]; then
   exit 1
 fi
 
+
+problem_dir="problem_${problem_number}"
+
 if [ -d "problems/$problem_dir" ]; then
   echo "문제 '$problem_number'에 해당하는 디렉토리가 이미 존재합니다."
   exit 1
 fi
-
-problem_dir="problem_${problem_number}"
 
 mkdir -p "problems/$problem_dir"
 
