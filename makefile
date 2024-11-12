@@ -80,3 +80,9 @@ problem_1-M: problems/problem_1-M/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_1-M/main.cpp -o problem_1-M
 	./problem_1-M 
 
+
+# 문제 problem_1-N
+problem_1-N: problems/problem_1-N/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_1-N/main.cpp -o problem_1-N
+	./problem_1-N 
+
