@@ -92,3 +92,9 @@ problem_1-O: problems/problem_1-O/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_1-O/main.cpp -o problem_1-O
 	./problem_1-O 
 
+
+# 문제 problem_2-A
+problem_2-A: problems/problem_2-A/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_2-A/main.cpp -o problem_2-A
+	./problem_2-A 
+
