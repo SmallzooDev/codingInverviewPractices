@@ -98,3 +98,9 @@ problem_2-A: problems/problem_2-A/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_2-A/main.cpp -o problem_2-A
 	./problem_2-A 
 
+
+# 문제 problem_2-B
+problem_2-B: problems/problem_2-B/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_2-B/main.cpp -o problem_2-B
+	./problem_2-B 
+
