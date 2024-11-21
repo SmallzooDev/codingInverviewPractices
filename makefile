@@ -200,3 +200,9 @@ problem_2-R: problems/problem_2-R/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_2-R/main.cpp -o problem_2-R
 	./problem_2-R 
 
+
+# 문제 problem_2-S
+problem_2-S: problems/problem_2-S/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_2-S/main.cpp -o problem_2-S
+	./problem_2-S 
+
