@@ -188,3 +188,9 @@ problem_2-P: problems/problem_2-P/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_2-P/main.cpp -o problem_2-P
 	./problem_2-P 
 
+
+# 문제 problem_2-Q
+problem_2-Q: problems/problem_2-Q/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_2-Q/main.cpp -o problem_2-Q
+	./problem_2-Q 
+
