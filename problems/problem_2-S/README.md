@@ -5,56 +5,57 @@
 #include "../../common/common_headers.h"
 // #include <bits/stdc++.h>
 
- vector<vector<int>> graph_nodes;
- vector<int> visited;
- int node_count, line_count;
+using namespace std;
 
- int dfs(int node_number) {
- if (visited[node_number] != 0)
- return visited[node_number];
+vector<vector<int>> graph_nodes;
+vector<int> visited;
+int node_count, line_count;
 
- int counter = 1;
- for (auto i : graph_nodes[node_number]) {
- counter += dfs(i);
- }
+int dfs(int node_number) {
+    if (visited[node_number] != 0)
+        return visited[node_number];
 
- visited[node_number] = counter;
- return counter;
- }
+    int counter = 1;
+    for (auto i : graph_nodes[node_number]) {
+        counter += dfs(i);
+    }
 
- int main() {
- ios::sync_with_stdio(false);
- cin.tie(nullptr);
+    visited[node_number] = counter;
+    return counter;
+}
 
- cin >> node_count >> line_count;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
- graph_nodes.resize(node_count + 1);
- visited.assign(node_count + 1, 0);
+    cin >> node_count >> line_count;
 
- for (int i = 0; i < line_count; i++) {
- int trusting, trusted;
- cin >> trusting >> trusted;
- graph_nodes[trusted].push_back(trusting);
- }
+    graph_nodes.resize(node_count + 1);
+    visited.assign(node_count + 1, 0);
 
- vector<int> result(node_count + 1, 0);
- int max_count = 0;
+    for (int i = 0; i < line_count; i++) {
+        int trusting, trusted;
+        cin >> trusting >> trusted;
+        graph_nodes[trusted].push_back(trusting);
+    }
 
- for (int i = 1; i <= node_count; i++) {
- if (visited[i] == 0) {
- result[i] = dfs(i);
- }
- max_count = max(max_count, result[i]);
- }
+    vector<int> result(node_count + 1, 0);
+    int max_count = 0;
 
- for (int i = 1; i <= node_count; i++) {
- if (result[i] == max_count) {
- cout << i << " ";
- }
- }
+    for (int i = 1; i <= node_count; i++) {
+        if (visited[i] == 0) {
+            result[i] = dfs(i);
+        }
+        max_count = max(max_count, result[i]);
+    }
 
- cout << endl;
- return 0;
- }
+    for (int i = 1; i <= node_count; i++) {
+        if (result[i] == max_count) {
+            cout << i << " ";
+        }
+    }
 
+    cout << endl;
+    return 0;
+}
 ```
