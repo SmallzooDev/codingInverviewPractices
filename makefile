@@ -212,3 +212,9 @@ problem_2-T: problems/problem_2-T/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_2-T/main.cpp -o problem_2-T
 	./problem_2-T 
 
+
+# 문제 problem_3-A-15686
+problem_3-A-15686: problems/problem_3-A-15686/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-A-15686/main.cpp -o problem_3-A-15686
+	./problem_3-A-15686 
+
