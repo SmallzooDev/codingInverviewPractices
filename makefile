@@ -230,3 +230,9 @@ problem_3-C-16234: problems/problem_3-C-16234/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_3-C-16234/main.cpp -o problem_3-C-16234
 	./problem_3-C-16234 
 
+
+# 문제 problem_3-D-4179
+problem_3-D-4179: problems/problem_3-D-4179/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-D-4179/main.cpp -o problem_3-D-4179
+	./problem_3-D-4179 
+
