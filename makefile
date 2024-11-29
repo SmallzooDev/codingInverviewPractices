@@ -224,3 +224,9 @@ problem_3-B-2589: problems/problem_3-B-2589/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_3-B-2589/main.cpp -o problem_3-B-2589
 	./problem_3-B-2589 
 
+
+# 문제 problem_3-C-16234
+problem_3-C-16234: problems/problem_3-C-16234/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-C-16234/main.cpp -o problem_3-C-16234
+	./problem_3-C-16234 
+
