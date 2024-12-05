@@ -260,3 +260,9 @@ problem_3-H-13913: problems/problem_3-H-13913/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_3-H-13913/main.cpp -o problem_3-H-13913
 	./problem_3-H-13913 
 
+
+# 문제 problem_3-J-14497
+problem_3-J-14497: problems/problem_3-J-14497/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-J-14497/main.cpp -o problem_3-J-14497
+	./problem_3-J-14497 
+
