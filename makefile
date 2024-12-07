@@ -284,3 +284,9 @@ problem_3-M-2529: problems/problem_3-M-2529/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_3-M-2529/main.cpp -o problem_3-M-2529
 	./problem_3-M-2529 
 
+
+# 문제 problem_3-N-9934
+problem_3-N-9934: problems/problem_3-N-9934/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-N-9934/main.cpp -o problem_3-N-9934
+	./problem_3-N-9934 
+
