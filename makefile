@@ -278,3 +278,9 @@ problem_3-L-1987: problems/problem_3-L-1987/main.cpp
 	g++ -std=c++17 -Icommon problems/problem_3-L-1987/main.cpp -o problem_3-L-1987
 	./problem_3-L-1987 
 
+
+# 문제 problem_3-M-2529
+problem_3-M-2529: problems/problem_3-M-2529/main.cpp
+	g++ -std=c++17 -Icommon problems/problem_3-M-2529/main.cpp -o problem_3-M-2529
+	./problem_3-M-2529 
+
